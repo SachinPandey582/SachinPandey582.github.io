@@ -1,0 +1,38 @@
+.Container{
+    color:white;
+    display: grid;
+    width: 70%;
+    padding: 2%;
+    height: 90vh;
+    margin: auto;
+    border: 1px solid white;
+    grid-template-columns: 30% 60%;
+}
+
+label {
+    color: aliceblue;
+    display: block;
+    font-size: 30px;
+ width: min-content;
+ margin: auto;
+ margin-bottom: 0.5rem;
+}
+input:hover{
+    background-color: aqua;
+    cursor: pointer;
+}   
+
+  input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.LinkedImage div{
+width: min-content;
+margin: auto;
+display: flex;
+flex-direction: column;
+margin: 40%;
+}
