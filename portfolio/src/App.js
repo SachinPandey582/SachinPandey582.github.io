@@ -1,10 +1,11 @@
 import "./index.css";
-import AllRoutes from "./Routes/AllRoutes";
+import AllRoutes from "./Routes/AllRoutes.jsx";
 
 function App() {
   return (
     <div className="App">
       <AllRoutes/>
+      
     </div>
   );
 }

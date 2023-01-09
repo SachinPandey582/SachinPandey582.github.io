@@ -2,6 +2,7 @@ import "./NavbarStyles.css"
 import {FaBars, FaTimes} from "react-icons/fa"
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
+import { Box, Button, Heading } from "@chakra-ui/react"
 
 const Navbar = () => {
     const [click,setClick]=useState(false)
@@ -14,6 +15,18 @@ const Navbar = () => {
             setColor(false)
         }
     }
+    const handleResume = () => {
+        fetch("/Sachin_pandey_resume.pdf").then((res) => {
+          res.blob().then((blob) => {
+            const fileUrl = window.URL.createObjectURL(blob);
+            // create an object for the file.
+            let file = document.createElement("a");
+            file.href = fileUrl;
+            file.download = "/Sachin_pandey_resume.pdf";
+            file.click();
+          });
+        });
+      };
 
     window.addEventListener("scroll",changeColor)
     const handleClick=()=>{
@@ -22,7 +35,10 @@ const Navbar = () => {
   return (
     <div className={color ? "headerNav headerNav-bg ":" headerNav"}>
         <Link to="/" >
-            <h1 >SACHIN</h1>
+            <Heading>
+                    <Box >SACHIN</Box>
+                
+                </Heading>
         </Link>
             
             <ul className={click ? "nav-menu-nav active" :"nav-menu-nav"}>
@@ -37,6 +53,9 @@ const Navbar = () => {
                     </li>
                 <li >
                     <Link  to="/contact">Contact</Link>
+                    </li>
+                    <li >
+                    <Button onClick={handleResume}>Resume</Button>
                     </li>
                
             </ul>

@@ -39,7 +39,7 @@ const AboutDetails = () => {
 ⚡ Fun fact Computer "Bugs" was inspired by a real Insect
          </div>
          <div className='right'>
-            <img src="hood1_prev_ui.png" alt="imageodme" />
+            <img style={{width:"90%" ,height:"90%"}} src="1111.jpg" alt="imageodme" />
          </div>
          </div>
         </div>

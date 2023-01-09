@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutDetails from '../Components/AboutDetails/AboutDetails'
+import AboutDetails from '../Components/AboutDetails/AboutDetails.jsx'
 
 const About = () => {
   return (
