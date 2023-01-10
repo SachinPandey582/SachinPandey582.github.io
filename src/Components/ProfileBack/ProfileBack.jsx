@@ -1,8 +1,8 @@
-import "./HeroStyle.css"
+import "./ProfileBack.css"
 import React from 'react'
 import { Link } from "react-router-dom"
 import { Box } from "@chakra-ui/react"
-const HeroImage = () => {
+const ProfileBack = () => {
   return (
     <div className="hero">
         <div className="mask">
@@ -19,4 +19,4 @@ const HeroImage = () => {
   )
 }
 
-export default HeroImage
+export default ProfileBack

@@ -2,7 +2,7 @@ import React from "react";
 import AboutDetails from "../Components/AboutDetails/AboutDetails.jsx";
 import Footer from "../Components/Footer/Footer.jsx";
 
-import HeroImage from "../Components/HeroFolder/HeroImage.jsx";
+import HeroImage from "../Components/ProfileBack/ProfileBack.jsx";
 import Navbar from "../Components/Navbar/Navbar.jsx";
 // import WorkCard from "../Components/WorkCard/WorkCard.jsx";
 import Contact from "./Contact.jsx";

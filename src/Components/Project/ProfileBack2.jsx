@@ -1,7 +1,7 @@
-import "./HeroImage2Style.css"
+import "./ProfileBack2.css"
 import React from 'react'
 
-const HeroImage2 = () => {
+const ProfileBack2 = () => {
   return (
     <div className="hero">
     <div className="mask">
@@ -17,4 +17,4 @@ const HeroImage2 = () => {
   )
 }
 
-export default HeroImage2
+export default ProfileBack2
