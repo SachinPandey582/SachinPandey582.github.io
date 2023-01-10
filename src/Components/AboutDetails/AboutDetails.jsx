@@ -7,7 +7,7 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import Typed from "react-typed";
 
 export default function About() {
