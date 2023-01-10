@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import StartPage from '../Components/StartPage/StartPage.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
-import Home from './Home.jsx'
+import Home from './home.jsx'
 import Project from './Project.jsx'
 
 const AllRoutes = () => {
