@@ -93,7 +93,7 @@ export default function Contact() {
                     // border='2px solid'
                    >
                       
-                   <Link  href="https://www.linkedin.com/in/prakash-gariya-a7580a239/"
+                   <Link  href="https://www.linkedin.com/in/SachinPandey582/"
                 target={"_blank"}>
                    <IconButton
                       aria-label="linkdin"
@@ -105,7 +105,7 @@ export default function Contact() {
                     />
                    </Link>
 
-                   <Link href="https://github.com/pgariya" target={"_blank"} >
+                   <Link href="https://github.com/SachinPandey582" target={"_blank"} >
                    <IconButton
                       aria-label="github"
                       variant="ghost"
