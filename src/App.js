@@ -1,12 +1,27 @@
-import "./index.css";
-import AllRoutes from "./Routes/AllRoutes.jsx";
+import About from "./Components/About";
+import Navbar from "./Components/Navbar";
+import "./App.css";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+
+import GitCalendar from "./Components/GitCalendar";
+
 
 function App() {
+  document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
   return (
-    <div className="App">
-      <AllRoutes/>
-      
-    </div>
+    <>
+      <Navbar />
+      <About />
+      <Skills />
+      <Projects />
+      <GitCalendar />
+      <Contact />
+     
+    </>
   );
 }
 
