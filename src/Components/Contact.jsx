@@ -16,6 +16,7 @@ import {
   InputLeftElement,
   Textarea,
   Stack,
+  Link,
 } from '@chakra-ui/react';
 
 
@@ -28,7 +29,7 @@ import {
 } from 'react-icons/md';
 
 
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import { BsGithub, BsDiscord, BsPerson, BsYoutube, BsLinkedin } from 'react-icons/bs';
 
 export default function contact() {
   return (
@@ -56,8 +57,8 @@ export default function contact() {
                         // width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdPhone color="pink" size="20px" />}>
+                        _hover={{ border: '2px solid #ed64a6' }}
+                        leftIcon={<MdPhone color="#ed64a6" size="20px" />}>
                         +91-9528124125
                       </Button>
                       <Button
@@ -66,8 +67,8 @@ export default function contact() {
                         // width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdEmail color="pink" size="20px" />}>
+                        _hover={{ border: '2px solid #ed64a6' }}
+                        leftIcon={<MdEmail color="#ed64a6" size="20px" />}>
                         SachinPandey582@gmail.com
                       </Button>
                       <Button
@@ -76,8 +77,8 @@ export default function contact() {
                         // width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdLocationOn color="pink" size="20px" />}>
+                        _hover={{ border: '2px solid #ed64a6' }}
+                        leftIcon={<MdLocationOn color="#ed64a6" size="20px" />}>
                         Uttarakhand, India
                       </Button>
                     </VStack>
@@ -87,30 +88,43 @@ export default function contact() {
                     spacing={5}
                     px={5}
                     alignItems="flex-start">
-                    <IconButton
+                    <Link href='https://youtu.be/c6ZhmFNE-jw'
+                    target={'_blank'}>
+                       <IconButton
                       aria-label="facebook"
                       variant="ghost"
                       size="lg"
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<MdFacebook size="28px" />}
+                      _hover={{ bg: '#ed64a6' }}
+                      icon={<BsYoutube size="28px" />}
                     />
+                    </Link>
+                   
+                   
+                    <Link href='https://github.com/SachinPandey582'
+                    target={'_blank'}> 
+                    
                     <IconButton
                       aria-label="github"
                       variant="ghost"
                       size="lg"
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
+                      _hover={{ bg: '#ed64a6' }}
                       icon={<BsGithub size="28px" />}
-                    />
+                      />
+                      </Link>
+
+                      <Link href='https://www.linkedin.com/in/sachin-pandey-web582/'
+                    target={'_blank'}>
                     <IconButton
                       aria-label="discord"
                       variant="ghost"
                       size="lg"
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<BsDiscord size="28px" />}
+                      _hover={{ bg: '#ed64a6' }}
+                      icon={<BsLinkedin size="28px" />}
                     />
+                       </Link>
                   </HStack>
                 </Box>
               </Box>

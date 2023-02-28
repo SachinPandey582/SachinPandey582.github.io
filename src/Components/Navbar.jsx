@@ -47,6 +47,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
    const handleResume = () => {
+    window.open(`https://drive.google.com/file/d/1YfWUwqKsEIGL-rFuGN6AEri6c3m-rhd8/view?usp=sharing`)
     fetch("/Sachin_pandey_Resumepdf.pdf").then((res) => {
       res.blob().then((blob) => {
         const fileUrl = window.URL.createObjectURL(blob);
@@ -172,21 +173,23 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>
-                  <a
-                    target="_blank"  rel="noreferrer"
+               
+               <a    target="_blank"  rel="noreferrer"
                     href="https://www.linkedin.com/in/sachin-pandey-web582/"
-                  >
-                    Linkedin
-                  </a>
-                </MenuItem>
+                  > <MenuItem>
+                  
                 
-                <MenuDivider />
-                <MenuItem>
-                  <a target="_blank"  rel="noreferrer"  href="https://github.com/SachinPandey582">
-                    Github
-                  </a>
+                    Linkedin
+                  
                 </MenuItem>
+                </a>
+                <MenuDivider />
+                <a target="_blank"  rel="noreferrer"  href="https://github.com/SachinPandey582">
+                <MenuItem>
+                 
+                    Github
+                 
+                </MenuItem> </a>
               </MenuList>
             </Menu>
           </Flex>

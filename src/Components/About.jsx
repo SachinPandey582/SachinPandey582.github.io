@@ -10,9 +10,10 @@ import {
 } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub  } from "react-icons/bs";
 import Typed from "react-typed";
-
+import "../App.css"
 export default function About() {
   const handleResume = () => {
+    window.open(`https://drive.google.com/file/d/1YfWUwqKsEIGL-rFuGN6AEri6c3m-rhd8/view?usp=sharing`)
     fetch("/Sachin_pandey_Resumepdf.pdf").then((res) => {
       res.blob().then((blob) => {
         const fileUrl = window.URL.createObjectURL(blob);
@@ -49,7 +50,7 @@ export default function About() {
                 zIndex: -1,
               }}
             >
-              Hi, I Am
+              Hi, I am
             </Text>
             <br />
             <Text color={"green.400"} as={"span"}>
@@ -57,6 +58,7 @@ export default function About() {
                 strings={[
                   "Sachin Pandey",
                   "A Full-Stack Developer",
+                  "A Problem Solver",
                   "A Tech-Enthusiast",
                   "An Entrepreneur",
                 ]}
@@ -123,26 +125,28 @@ through dedicated effort.
       <Flex flex={1} alignItems="center" justifyContent={"center"}>
         {colorMode === "dark" ? (
           <Image
-          // borderRadius={500}
+          borderRadius={50}
             objectFit={"cover"}
-            className="zoom"
-            width={["xs", "lg"]}
-            height={["xs", "lg"]}
+            className="zoom "
+
+            width={["xs", "md"]}
+            height={["xs", "md"]}
             src={
               "https://i.postimg.cc/nhwgknMc/Professional-photo.jpg"
             }
             />
             ) : (
-              <Image
-          borderRadius={10}
+              <Image 
+              
+          borderRadius={40}
               alt={"Login Image"}
               className="zoom"
               objectFit={"cover"}
-              width={["xs", "lg"]}
-              height={["xs", "lg"]}
+              width={["xs", "md"]}
+              height={["xs", "md"]}
               src={
                 
-                "https://i.postimg.cc/nhwgknMc/Professional-photo.jpg"
+                "https://i.postimg.cc/4dmLfY0m/final-professsional-image.jpg"
             }
           />
         )}

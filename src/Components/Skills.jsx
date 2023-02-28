@@ -20,10 +20,11 @@ import {
   SiCss3,
   SiChakraui,
   SiRedux,
+  SiExpress,
 } from "react-icons/si";
 
-import { DiJavascript1 } from "react-icons/di";
-
+import { DiJavascript1,DiMongodb ,DiNodejs} from "react-icons/di";
+import { TbBrandNextjs} from "react-icons/tb";
 const Feature = ({ text, icon, iconBg }) => {
   return (
     <Stack direction={"row"} align={"center"}>
@@ -97,6 +98,20 @@ export default function Skills() {
                   iconBg={useColorModeValue("green.100", "green.900")}
                   text={"TypeScript"}
                 />
+                <Feature
+                  icon={
+                    <Icon as={DiMongodb} color={"green.500"} w={5} h={5} />
+                  }
+                  iconBg={useColorModeValue("green.100", "green.900")}
+                  text={"mongoose"}
+                />
+                <Feature
+                  icon={
+                    <Icon as={DiNodejs} color={"green.500"} w={5} h={5} />
+                  }
+                  iconBg={useColorModeValue("green.100", "green.900")}
+                  text={"Node JS"}
+                />
                 
                
               </Stack>
@@ -135,6 +150,18 @@ export default function Skills() {
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"Git & Github"}
                 />
+                 <Feature
+                  icon={<Icon as={SiExpress} color={"pink.500"} w={5} h={5} />}
+                  iconBg={useColorModeValue("pink.100", "pink.900")}
+                  text={"Express"}
+                />
+                 <Feature
+                  icon={<Icon as={TbBrandNextjs} color={"pink.500"} w={5} h={5} />}
+                  iconBg={useColorModeValue("pink.100", "pink.900")}
+                  text={"Next JS"}
+                />
+                
+               
               
               </Stack>
             </Box>

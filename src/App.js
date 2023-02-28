@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 
 import GitCalendar from "./Components/GitCalendar";
+import ProjectCard from "./Components/NewCard";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Projects />
       <GitCalendar />
       <Contact />
+     
      
     </>
   );
