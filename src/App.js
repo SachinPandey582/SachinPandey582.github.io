@@ -10,9 +10,9 @@ import ProjectCard from "./Components/NewCard";
 
 
 function App() {
-  document.addEventListener("contextmenu", (event) => {
-    event.preventDefault();
-  });
+  // document.addEventListener("contextmenu", (event) => {
+  //   event.preventDefault();
+  // });
   return (
     <>
       <Navbar />
