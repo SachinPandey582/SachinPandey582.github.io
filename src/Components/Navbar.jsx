@@ -48,13 +48,13 @@ export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
    const handleResume = () => {
     window.open(`https://drive.google.com/file/d/1YfWUwqKsEIGL-rFuGN6AEri6c3m-rhd8/view?usp=sharing`)
-    fetch("/Sachin_pandey_Resumepdf.pdf").then((res) => {
+    fetch("/Sachin_pandey_Resume.pdf").then((res) => {
       res.blob().then((blob) => {
         const fileUrl = window.URL.createObjectURL(blob);
         // create an object for the file.
         let file = document.createElement("a");
         file.href = fileUrl;
-        file.download = "/Sachin_pandey_Resumepdf.pdf";
+        file.download = "/Sachin_pandey_Resume.pdf";
         file.click();
       });
     });

@@ -186,10 +186,10 @@ const Projects = () => {
         </GridItem>
       
       </Grid>
-      <Box  boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px" py={"5"}>
+      {/* <Box  boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px" py={"5"}>
       <ProjectCard arr={spritsVilla}/>
 
-        </Box>
+        </Box> */}
     </Container>
   );
 };

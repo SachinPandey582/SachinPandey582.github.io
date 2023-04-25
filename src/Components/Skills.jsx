@@ -12,7 +12,6 @@ import {
   Box,
 } from "@chakra-ui/react";
 
-
 import { FaReact, FaGithub } from "react-icons/fa";
 import {
   SiTypescript,
@@ -23,8 +22,8 @@ import {
   SiExpress,
 } from "react-icons/si";
 
-import { DiJavascript1,DiMongodb ,DiNodejs} from "react-icons/di";
-import { TbBrandNextjs} from "react-icons/tb";
+import { DiJavascript1, DiMongodb, DiNodejs } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
 const Feature = ({ text, icon, iconBg }) => {
   return (
     <Stack direction={"row"} align={"center"}>
@@ -91,7 +90,7 @@ export default function Skills() {
                   iconBg={useColorModeValue("green.100", "green.900")}
                   text={"JavaScript"}
                 />
-                 <Feature
+                <Feature
                   icon={
                     <Icon as={SiTypescript} color={"green.500"} w={5} h={5} />
                   }
@@ -99,21 +98,15 @@ export default function Skills() {
                   text={"TypeScript"}
                 />
                 <Feature
-                  icon={
-                    <Icon as={DiMongodb} color={"green.500"} w={5} h={5} />
-                  }
+                  icon={<Icon as={DiMongodb} color={"green.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("green.100", "green.900")}
                   text={"mongoose"}
                 />
                 <Feature
-                  icon={
-                    <Icon as={DiNodejs} color={"green.500"} w={5} h={5} />
-                  }
+                  icon={<Icon as={DiNodejs} color={"green.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("green.100", "green.900")}
                   text={"Node JS"}
                 />
-                
-               
               </Stack>
             </Box>
             <Box>
@@ -125,44 +118,41 @@ export default function Skills() {
                   />
                 }
               >
-
-            <Feature
+                <Feature
                   icon={<Icon as={FaReact} color={"pink.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"React Js"}
                 />
-                
+
                 <Feature
                   icon={<Icon as={SiRedux} color={"pink.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"Redux"}
                 />
 
-           <Feature
+                <Feature
                   icon={<Icon as={SiChakraui} color={"pink.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"Chakra UI"}
                 />
-
 
                 <Feature
                   icon={<Icon as={FaGithub} color={"pink.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"Git & Github"}
                 />
-                 <Feature
+                <Feature
                   icon={<Icon as={SiExpress} color={"pink.500"} w={5} h={5} />}
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"Express"}
                 />
-                 <Feature
-                  icon={<Icon as={TbBrandNextjs} color={"pink.500"} w={5} h={5} />}
+                <Feature
+                  icon={
+                    <Icon as={TbBrandNextjs} color={"pink.500"} w={5} h={5} />
+                  }
                   iconBg={useColorModeValue("pink.100", "pink.900")}
                   text={"Next JS"}
                 />
-                
-               
-              
               </Stack>
             </Box>
           </Flex>
@@ -175,7 +165,6 @@ export default function Skills() {
               "https://images.pexels.com/photos/4350767/pexels-photo-4350767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             }
             objectFit={"cover"}
-            
           />
         </Flex>
       </SimpleGrid>
